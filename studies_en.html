@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>? ? ? -</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        html, body{
+            overflow-x: hidden !important;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-port-d">
+
+        <button onclick="menunocheact();" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link " href="home_en.html">HOME</a>
+                <a class="nav-link" href="#material">STUDIES</a>
+                <a class="nav-link" href="animations_en.html">WORK</a>
+                <a class="nav-link" href="#contacto">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACION -->
+    
+
+     <!-- INICIO ESTUDIOS Y PROYECTOS -->
+     <section id="material">
+        <div class="cont-text">
+            <i>
+                <h2>DOCUMENTS</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><a target="_blank" href="docs/CV_es.pdf">CV_es</a></li>
+                                    <li><a target="_blank" href="docs/CV_sv.pdf">CV_sv</a></li>
+                                    <li><a target="_blank" href="docs/CV_en.pdf">CV_en</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><a target="_blank" href="img/Grades for Wyatt Contreras_ Learning Swedish 2022.pdf">LEARNING SWEDISH</a></li>
+                                    <li><a onclick="nodisponible();" href="">MULTIMEDIA PRODUCTION</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                <div id="sect-proyect">
+                    <h2>PROJECTS</h2>
+
+
+                    <a href="animaciones.html">
+                        <div class="itemcard">
+                            <h5>ANIMATIONS</h5>
+                        </div>
+                    </a>
+
+
+                    <div class="itemcard" data-toggle="modal" data-target="#Modal">
+                        <h5>ILUSTRATIONS</h5>
+                    </div>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ModalLabel">Ilustraciones</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="docs/ilustracion1.jpg" alt="dibujo">
+                                    <img src="docs/rojo.jpg" alt="dibujo">
+                                    <img src="docs/verde.jpg" alt="dibujo">
+                                    <img src="docs/tarjeta1.jpg" alt="dibujo">
+                                    <img src="docs/tarjeta2.jpg" alt="dibujo">
+                                    <img src="docs/eva.jpg" alt="dibujo">
+                                    <img src="docs/letraC.jpg" alt="dibujo">
+                                    <img src="docs/hojas.jpg" alt="dibujo">
+                                    <img src="docs/Poppy.jpg" alt="dibujo">
+                                    <img src="docs/muñeco de nieve.jpg" alt="dibujo">
+                                    <img src="docs/minion.jpg" alt="dibujo">
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fin Modal -->
+
+
+                </div>
+        </div>
+        </i>
+    </section>
+    <!-- FIN ESTUDIOS Y PROYECTOS -->
+
+
+    <!-- INICIO CONTACTO -->
+    <section id="contacto">
+        <div class="container">
+            <div class="cont-text">
+                <i>
+                    <h1>CONTACT</h1>
+                    <div class="row">
+                        <div class="col-md-3">
+                            
+                            <!-- CODIGO PARA WHATSAPP -->
+                            <a target="_blank"
+                                href="https://api.whatsapp.com/send?phone=573232370461&text=Hola!%20me%20gustaría%20conocer%20acerca%20de%20de%20tu%20trabajo%20!">
+                                <img src="img/icon-whatsapp.png" alt="whatsapp"></a>
+                             </div>
+                    </div>
+                    <a id="correo" href="mailto:dccontreras50@misena.edu.co">dccontreras50@misena.edu.co</a>
+                </i>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+    <!-- FIN CONTACTO -->
+
+    <!-- cambio de tema boton flotante -->
+    <section id="btn-tema" onclick="temaactivo();"><img src="img/piñon1.png" alt=""></section>
+    <div id="cont-colores">
+        <div id="nochedia">
+            <img id="sol" src="img/sol.png" onclick="bgdia();" alt="modo claro">
+            <img id="luna" src="img/luna.png" onclick="bgnoche();" alt="modo oscuro">
+        </div>
+        <h4>Personalised</h4>
+        <button id="morado" onclick="bgmorado();"></button>
+        <button id="verde" onclick="bgverde();"></button>
+        <button id="rosa" onclick="bgrosa();"></button>
+        <button id="azul" onclick="bgazul();"></button>
+        <p>Click for activate <br> and desactivate the theme <3 </p>
+
+            <div id="idiomas">
+                <a href="studies_en.html"><img src="img/ingles.png" alt="inglés"></a>
+                <a href="studier_sv.html"><img src="img/sverige.png" alt="sueco"></a>
+                <a href="estudios.html"><img src="img/español.png" alt="español"></a>
+            </div>
+
+    </div>
+    <!-- fin de boton flotante cambio de tema -->
+
+
+    <!-- PUBLICIDAD DE LUNASTRAR -->
+    <div id="mensajeluna" data-aos="fade-left">
+            <p>Learn width <br><img src="img/logoluna.png" alt=""> Lunastrar <br><u><a target="_blank" href="https://www.youtube.com/watch?v=B9JJPleiE5s">See more</a></u></p>
+    </div>
+    <!-- FIN PUBLICIDAD DE LUNASTRAR -->
+
+
+
+
+    <!-- JS DE BOOTSTRAP -->
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
